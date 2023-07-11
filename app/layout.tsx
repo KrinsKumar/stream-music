@@ -19,27 +19,28 @@ export const metadata = {
 export const revalidate = 0;
 
 export default async function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) {
 
-  const userSongs = await getSongsByUserId();
+    const userSongs = await getSongsByUserId();
 
-  return (
-    <html lang="en">
-      <body className={font.className}>
-        <ToasterProvider />
-        <SupabaseProvider>
-          <UserProvider>
-            <ModalProvider />
-            <Sidebar songs={userSongs}>
-              {children}
-            </Sidebar>
-            <Player />
-          </UserProvider>
-        </SupabaseProvider>
-      </body>
-    </html>
-  )
+
+    return (
+        <html lang="en">
+            <body className={font.className}>
+            <ToasterProvider />
+            <SupabaseProvider>
+                <UserProvider>
+                <ModalProvider />
+                <Sidebar songs={userSongs}>
+                    {children}
+                </Sidebar>
+                <Player />
+                </UserProvider>
+            </SupabaseProvider>
+            </body>
+        </html>
+    )
 }
