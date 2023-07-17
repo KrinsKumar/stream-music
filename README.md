@@ -2,6 +2,8 @@
 
 This is a Full Stack Spotify Clone with Next 13.4, React, Tailwind, Supabase and PostgreSQL! 
 
+![Home page of the clone](/gh-images/image.png)
+
 ## Front End
 Using the power of Next.js 13.4 and React, I have created a responsive and dynamic user interface that closely resembles Spotify's sleek design, harnessing the flexibility of Tailwind CSS.
 
