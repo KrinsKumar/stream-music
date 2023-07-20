@@ -14,12 +14,14 @@ To handle the backend, Supabase was utilized, an open-source Firebase alternativ
 ## Key Features:
 
 - Song upload
+![Song upload modal](/gh-images/songUpload.png)
 - Supabase and PostgreSQL Database handling
 - Tailwind design for sleek UI
 - Tailwind animations and transition effects
 - Full responsiveness for all devices
 - Credential authentication with Supabase
 - Github authentication integration
+![Alt text](/gh-images/auth.png)
 - File and image upload using Supabase storage
 - Client form validation and handling using react-hook-form
 - Server error handling with react-toast
